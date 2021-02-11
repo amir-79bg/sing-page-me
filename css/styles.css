@@ -1,0 +1,83 @@
+header{
+    /* background: url(../images/Union\ 1.svg); */
+    padding-bottom: 97px;
+    position: relative;
+    overflow: hidden;
+    background: #000;
+}
+.menu-logo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-logo a img{
+    width: 100px;
+
+}
+.menu-logo nav ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
+.menu-logo nav ul li{
+    margin-right: 10px;
+}
+.menu-logo nav ul li:nth-last-child(1){
+    margin-right: 0px;
+}
+.menu-logo nav  ul li a{
+    padding: 5px 10px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    transition: all .3s ease;
+
+}
+.menu-logo nav ul li a:hover{
+   color: #ffa600;
+   transition: all .3s ease;
+}
+.topic-web{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-top: 80px;
+}
+.topic-web span{
+    font-size: 50px;
+    color: #fff;
+    font-weight: 400;
+    opacity: .7;
+}
+.topic-web h1{
+    font-size: 52px;
+    color: #fff;
+    font-weight: 600;
+    word-spacing: -4px;
+}
+.topic-web p{
+    font-size: 17px;
+    color: #fff;
+    font-weight: 300;
+}
+.topic-web button{
+    align-self: flex-start;
+    border: 1px solid #ffa600;
+    background: transparent;
+    color: #ffa600;
+    padding: 10px 17px;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 500;
+    outline: none;
+    cursor: pointer;
+    margin-top: 21px;
+}
+header .container > img{
+    position: absolute;
+    top: 62px;
+    right: 214px;
+    width: 382px;
+    filter: grayscale(100%);
+}
