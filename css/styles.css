@@ -1,83 +1,163 @@
-header{
-    /* background: url(../images/Union\ 1.svg); */
-    padding-bottom: 97px;
-    position: relative;
-    overflow: hidden;
-    background: #000;
+header {
+  /* background: url(../images/Union\ 1.svg); */
+  padding-bottom: 97px;
+  position: relative;
+  overflow: hidden;
+  background: #000;
 }
-.menu-logo{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.menu-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.menu-logo a img{
-    width: 100px;
+.menu-logo a img {
+  width: 100px;
+}
+.menu-logo nav ul {
+  display: flex;
+  flex-direction: row;
+  list-style: none;
+}
+.menu-logo nav ul li {
+  margin-right: 10px;
+}
+.menu-logo nav ul li:nth-last-child(1) {
+  margin-right: 0px;
+}
+.menu-logo nav ul li a {
+  padding: 5px 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+.menu-logo nav ul li a:hover {
+  color: #ffa600;
+  transition: all 0.3s ease;
+}
+.topic-web {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin-top: 80px;
+}
+.topic-web span {
+  font-size: 50px;
+  color: #fff;
+  font-weight: 400;
+  opacity: 0.7;
+}
+.topic-web h1 {
+  font-size: 52px;
+  color: #fff;
+  font-weight: 600;
+  word-spacing: -4px;
+}
+.topic-web p {
+  font-size: 17px;
+  color: #fff;
+  font-weight: 300;
+}
+.topic-web button {
+  align-self: flex-start;
+  border: 1px solid #ffa600;
+  background: transparent;
+  color: #ffa600;
+  padding: 10px 17px;
+  border-radius: 3px;
+  font-size: 16px;
+  font-weight: 500;
+  outline: none;
+  cursor: pointer;
+  margin-top: 21px;
+}
+header .container > img {
+  position: absolute;
+  top: 62px;
+  right: 214px;
+  width: 382px;
+  filter: grayscale(100%);
+}
+/* section about me */
+.section-about-me {
+  display: flex;
+  flex-direction: row;
+}
+.section-right,
+.section-left {
+  width: 50%;
+}
+.section-left h4 {
+  font-size: 17px;
+  font-weight: 600;
+  color: #000;
+  border-bottom: 1px solid #ccc;
+  padding: 7px 50px 7px 0;
+  position: relative;
+  display: inline-block;
+}
+.section-left h4::before {
+  content: "";
+  position: absolute;
+  width: 52px;
+  height: 3px;
+  background-color: #ffa600;
+  bottom: -3px;
+  left: 0;
+  border-radius: 6px;
+  box-shadow: 0 0 3px 0px #ffa600;
+}
+.section-left h4::after {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background-color: #ffa600;
+  bottom: -5px;
+  left: 49px;
+  border-radius: 50%;
+  box-shadow: 0 0 3px 0px #ffa600;
+}
+.section-left h2 {
+  font-size: 31px;
+  font-weight: 600;
+  color: #000;
+  margin: 11px 0;
+}
+.section-left p {
+  font-size: 17px;
+  font-weight: 300;
+  color: #000;
+  margin: 11px 0;
+  line-height: 28px;
+}
+
+ .section-left p:nth-child(3) {
+
+    margin-top: 30px;
+} 
+
+.section-left button {
+  border: none;
+  border-radius: 5px;
+  outline: none;
+
+  background: #ffa600;
+  color: #000;
+  padding: 8px 22px;
+  margin: 10px 0;
+  font-size: 16px;
+  font-weight: 400;
+  box-shadow: 0 0 12px 0 #ffa60019;
+}
+.section-right{
+    background: url(../images/vector-creator\ \(3\).png);
+    background-size: 134%;
+    background-position: -173px -164px;
 
 }
-.menu-logo nav ul{
-    display: flex;
-    flex-direction: row;
-    list-style: none;
-}
-.menu-logo nav ul li{
-    margin-right: 10px;
-}
-.menu-logo nav ul li:nth-last-child(1){
-    margin-right: 0px;
-}
-.menu-logo nav  ul li a{
-    padding: 5px 10px;
-    text-decoration: none;
-    color: #fff;
-    font-size: 17px;
-    font-weight: 500;
-    transition: all .3s ease;
-
-}
-.menu-logo nav ul li a:hover{
-   color: #ffa600;
-   transition: all .3s ease;
-}
-.topic-web{
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin-top: 80px;
-}
-.topic-web span{
-    font-size: 50px;
-    color: #fff;
-    font-weight: 400;
-    opacity: .7;
-}
-.topic-web h1{
-    font-size: 52px;
-    color: #fff;
-    font-weight: 600;
-    word-spacing: -4px;
-}
-.topic-web p{
-    font-size: 17px;
-    color: #fff;
-    font-weight: 300;
-}
-.topic-web button{
-    align-self: flex-start;
-    border: 1px solid #ffa600;
-    background: transparent;
-    color: #ffa600;
-    padding: 10px 17px;
-    border-radius: 3px;
-    font-size: 16px;
-    font-weight: 500;
-    outline: none;
-    cursor: pointer;
-    margin-top: 21px;
-}
-header .container > img{
-    position: absolute;
-    top: 62px;
-    right: 214px;
-    width: 382px;
-    filter: grayscale(100%);
+.section-right img {
+    width: 60%;
+    margin-left: 55px;
 }
